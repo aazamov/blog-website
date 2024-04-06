@@ -1,0 +1,21 @@
+{
+  "tabWidth": 2,
+  "printWidth": 120,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "^react(.*)",
+    "^next(.*)",
+    "^@core/(.*)$",
+    "^@server/(.*)$",
+    "^@/hooks/(.*)",
+    "^@/components/(.*)",
+    "^@/context/(.*)",
+    "^@/utils/(.*)",
+    "^@/types/(.*)",
+    "^@/styles/(.*)",
+    "@/(.*)",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
