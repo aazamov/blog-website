@@ -6,6 +6,8 @@ import ru from "../locale/ru.json";
 import en from "../locale/en.json";
 import { IntlProvider } from "react-intl";
 import { useRouter } from "next/router";
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@/prismicio";
 
 const messages = {
   ru: ru,
@@ -23,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Layout>
         <Component {...pageProps} />
+        <PrismicPreview repositoryName={repositoryName} />
       </Layout>
     </IntlProvider>
   );
